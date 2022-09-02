@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/hammer.svg" />
+    <title>Lawana</title>
+  </head>
+  <body class="w-full overflow-x-hidden font-display bg-backBrown">
+    <header class="relative">
+      <nav
+        class="fixed top-0 w-[102vw] py-12 lg:py-10 transition-all duration-300 -translate-x-1/2 bg-transparent z-100 left-1/2"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex gap-2">
+            <div
+              class="relative flex items-center justify-center w-8 h-8 pt-1 pr-1 overflow-hidden rounded-full bg-backBrown sm:bg-backYellow-100"
+            >
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="sm:fill-backBrown fill-backYellow-100"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.753 9.4005L11.586 2.232L12.441 1.3785L11.0655 0L4.695 6.3675L6.075 7.7445L6.87 6.9495L9.8025 9.8805L0 19.683L1.245 20.9265L11.0445 11.1255L14.0355 14.115L13.242 14.9115L14.619 16.287L21 9.9075L19.6245 8.5305L18.753 9.4005Z"
+                  fill="#A08F36"
+                />
+              </svg>
+            </div>
+            <p
+              class="text-2xl font-semibold text-backBrown sm:text-backYellow-200"
+            >
+              <a href="#">Lawana</a>
+            </p>
+          </div>
+          <div
+            class="hidden lg:flex lg:gap-9.5 items-center flex-col justify-between fixed w-screen h-screen invisible opacity-0 lg:visible lg:opacity-100 lg:w-auto lg:h-auto lg:static lg:flex-row"
+          >
+            <ul class="flex gap-9.5 lg:flex-row flex-col">
+             <a href="#" class="group relative" ><li class="text-lg font-normal text-txtBeige-100 group-hover:opacity-0 transition-all duration-300"
+              >
+                Home
+              </li> 
+              <div class="absolute group-hover:opacity-100 transition-all duration-300 opacity-0 left-1/2 -translate-x-1/2 text-lg top-0 font-bold text-txtBeige-300">Home</div>
+            </a>
+              <a href="#footer" class="group relative" ><li
+                class="text-lg font-normal text-txtBeige-100 group-hover:opacity-0 transition-all duration-300"
+              >
+                Pricing
+              </li> 
+              <div class="absolute group-hover:opacity-100 transition-all duration-300 opacity-0 left-1/2 -translate-x-1/2 text-lg top-0 font-bold text-txtBeige-300">Pricing</div>
+            </a>
+              <a href="#footer" class="group relative" ><li
+                class="text-lg font-normal text-txtBeige-100 group-hover:opacity-0 transition-all duration-300"
+              >
+                Contact
+              </li> 
+              <div class="absolute group-hover:opacity-100 transition-all duration-300 opacity-0 left-1/2 -translate-x-1/2 text-lg top-0 font-bold text-txtBeige-300">Contact</div>
+            </a>
+              <a href="#footer" class="group relative" ><li
+                class="text-lg font-normal text-txtBeige-100 group-hover:opacity-0 transition-all duration-300"
+              >
+                Terms and Conditions
+              </li> 
+              <div class="absolute group-hover:opacity-100 transition-all duration-300 opacity-0 left-1/2 -translate-x-1/2 text-lg top-0 font-bold text-txtBeige-300 whitespace-nowrap">Terms and Conditions</div>
+            </a>
+            </ul>
+            <button
+              class="py-4 text-lg font-semibold leading-none transition-all duration-300 border rounded-xl text-backYellow-100 border-backYellow-100 hover:scale-105 hover:text-backBrown hover:bg-backYellow-100 px-7"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="cursor-pointer group lg:hidden hamburger-btn">
+            <svg
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="transition-all duration-300 group-hover:scale-110"
+            >
+              <path
+                class="sm:stroke-backYellow-100"
+                d="M0 1H24"
+                stroke="#2B2922"
+                stroke-width="2"
+              />
+              <path
+                class="sm:stroke-backYellow-100"
+                d="M0 8H24"
+                stroke="#2B2922"
+                stroke-width="2"
+              />
+              <path
+                class="sm:stroke-backYellow-100"
+                d="M0 15H24"
+                stroke="#2B2922"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+        
+      </nav>
+      <div class="fixed top-0 z-50 grid w-screen h-screen transition-all duration-300 translate-x-full lg:hidden place-items-center bg-backBeige sm:bg-backBrown mobile-nav">
+        <ul class="flex flex-col gap-9">
+            <a href="#">
+              <li
+                class="text-lg font-normal text-center transition-all duration-300 text-backBrown sm:text-txtBeige-200 hover:scale-105 nav-link"
+              >
+                Home
+              </li>
+            </a>
+            <a href="#choose-law">
+              <li
+                class="text-lg font-normal text-center transition-all duration-300 text-backBrown sm:text-txtBeige-200 hover:scale-105  nav-link"
+              >
+                Pricing
+              </li>
+            </a>
+            <a href="#footer">
+              <li
+                class="text-lg font-normal text-center transition-all duration-300 text-backBrown sm:text-txtBeige-200 hover:scale-105  nav-link"
+              >
+                Contact
+              </li>
+            </a>
+            <a href="#footer">
+              <li
+                class="text-lg font-normal text-center transition-all duration-300 text-backBrown sm:text-txtBeige-200 hover:scale-105  nav-link"
+              >
+                Terms and Conditions
+              </li>
+            </a>
+        </ul>
+      </div>
+      <div
+        class=" container absolute z-40 flex flex-col gap-6 -translate-x-1/2 sm:static left-1/2 top-38 sm:translate-x-0 lg:flex-row sm:items-center sm:mt-28 lg:mt-44 sm:top-0 lg:justify-between"
+      >
+        <h2
+          class="text-5xl lg:whitespace-nowrap font-extrabold text-center text-white leading-3.75 sm:text-left lg:text-7xl lg:leading-6.25 lg:gap-26.5"
+        >
+          Your Justice Is <br class="hidden lg:block" />
+          Our Top Priority
+        </h2>
+        <p
+          class="text-sm leading-5 text-center text-white sm:text-left lg:leading-8 lg:text-xl"
+        >
+          As a state of law, maintaining justice is <br class="hidden lg:block" /> something that every citizen
+          must pay <br class="hidden lg:block" />
+          attention to, and we are here to uphold justice <br class="hidden lg:block" /> for you
+        </p>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="relative swiper1-box sm:mt-11 lg:mt-20">
+        <div class="relative swiper1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="object-cover swiper-slide">
+              <img
+                src="img/hammer-header-mobile.png"
+                alt="hammer-img"
+                class="object-cover w-full sm:hidden"
+              />
+              <img
+                src="img/hammer-header-desktop.png"
+                alt="hammer-img"
+                class="hidden object-cover w-full sm:block"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 z-40 flex -translate-x-1/2 translate-y-1/2 left-1/2 sm:translate-y-full sm:right-0 sm:left-auto sm:translate-x-0"
+        >
+          <button class="bg-buttonBrown p-4.5 grid place-items-center btn-left">
+            <div
+              class="grid w-8 h-8 border rounded-full border-backYellow-100 place-items-center"
+            >
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 15 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 22L2.23077 12L13 2"
+                  stroke="#A08F36"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            class="bg-backYellow-100 p-4.5 grid place-items-center btn-right"
+          >
+            <div
+              class="grid w-8 h-8 border border-white rounded-full place-items-center"
+            >
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 15 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2L12.7692 12L2 22"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="pb-12 lg:pb-25 pt-33.75 lg:pt-38">
+      <section class="pb-24 lg:pb-38">
+        <div
+          class="container flex-col sm:flex container2 sm:flex-row sm:items-center lg:gap-80 sm:gap-25 md:gap-40"
+        >
+          <h2
+            class="text-4xl font-extrabold leading-2.75 text-txtBeige-300 sm:hidden"
+          >
+            Get Justice In Law From<br />
+            Crime
+          </h2>
+          <div class="relative w-full mt-12 lg:mt-0 lg:w-auto sm:flex">
+            <div
+              class="overflow-hidden max-w-54 h-75 lg:h-auto lg:max-w-none lg:w-100"
+            >
+              <img
+                class="object-cover object-center w-full"
+                src="img/hammer2.png"
+                alt="hammer-img"
+              />
+            </div>
+            <div
+              class="max-w-13.5r lg:max-w-none lg:w-100 max-h-52 lg:max-h-full absolute top-52 right-0 sm:translate-x-1/2 sm:-translate-y-1/2 sm:top-1/2"
+            >
+              <div class="w-full h-36 lg:h-auto"><img src="img/judge1.png" alt="lawyer-img" class="object-cover h-full"/></div>
+              <div class="px-[13px] py-4 lg:p-6 lg:pb-8 bg-backYellow-100">
+                <p
+                  class="font-semibold leading-[1.08rem] text-white text-xs2 lg:text-xl lg:leading-8"
+                >
+                  Our Lawyer Is Observing The Evidence In The Matter
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-col justify-between mt-42 sm:mt-0 sm:flex lg:h-90">
+            <div>
+              <h2
+                class="hidden text-4xl xl:text-5xl xl:leading-16.25 font-extrabold leading-none text-txtBeige-300 sm:block"
+              >
+                Get Justice In<br />
+                Law From Crime
+              </h2>
+              <p
+                class="text-sm leading-5 xl:text-xl text-txtBeige-200 sm:mt-6 xl:leading-8"
+              >
+                We protect you from all crimes and help find the truth and
+                freedom for you, with our professional lawyers it can definitely
+                be done quickly and actually
+              </p>
+            </div>
+            <p
+              class="text-sm leading-[17px] underline underline-offset-4 text-backYellow-100 mt-5.5 lg:text-xl lg:leading-6"
+            >
+              <a href="#">See more about this</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="scroll-m-28 pt-15 lg:pt-17.5 pb-[4.625rem] lg:pb-18.5 bg-backBrownLight" id="choose-law">
+        <div class="container flex flex-col container2 lg:flex-col-reverse">
+          <div class="flex flex-col lg:flex-row lg:gap-44 lg:items-center lg:mt-10">
+            <h2 class="text-4xl font-extrabold leading-2.75 lg:leading-16.25 text-txtBeige-200  whitespace-nowrap lg:text-5xl">
+              Choose The <br class="lg:hidden block"/>
+              Law <br class="hidden lg:block"/>Of Your<br class="lg:hidden block"/> Need
+            </h2>
+            <p class="mt-6 text-sm leading-5 lg:mt-0 text-txtBeige-200 lg:text-xl lg:leading-8 lg:pr-13">
+              We present various types of legal protection services with the
+              best quality that you can choose according to your needs
+            </p>
+          </div>
+          <p
+            class="mt-5 text-sm leading-none underline lg:mt-0 underline-offset-4 text-backYellow-100 lg:text-xl"
+          >
+            <a href="#">See more our services</a>
+          </p>
+        </div>
+        <div
+          class="container grid gap-6  mt-17.5 lg:mt-15 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- LAW OF YOUR NEED CARDS -->
+          <!-- CARD -->
+          <div class="relative px-6 pt-8 lg:pt-9.5 bg-backBrownLightest pb-11 lg:pb-13">
+            <svg
+            class="w-11 h-12.5 lg:w-auto lg:h-auto"
+              width="52"
+              height="56"
+              viewBox="0 0 52 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.9955 27.0111C13.9955 27.8065 13.6795 28.5693 13.1171 29.1317C12.5547 29.6941 11.7919 30.0101 10.9965 30.0101C10.2011 30.0101 9.43831 29.6941 8.87588 29.1317C8.31346 28.5693 7.9975 27.8065 7.9975 27.0111C7.9975 26.2157 8.31346 25.4529 8.87588 24.8905C9.43831 24.3281 10.2011 24.0121 10.9965 24.0121C11.7919 24.0121 12.5547 24.3281 13.1171 24.8905C13.6795 25.4529 13.9955 26.2157 13.9955 27.0111Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M20.993 30.0101C21.7884 30.0101 22.5512 29.6941 23.1136 29.1317C23.6761 28.5693 23.992 27.8065 23.992 27.0111C23.992 26.2157 23.6761 25.4529 23.1136 24.8905C22.5512 24.3281 21.7884 24.0121 20.993 24.0121C20.1976 24.0121 19.4348 24.3281 18.8724 24.8905C18.31 25.4529 17.994 26.2157 17.994 27.0111C17.994 27.8065 18.31 28.5693 18.8724 29.1317C19.4348 29.6941 20.1976 30.0101 20.993 30.0101Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M13.9955 37.0077C13.9955 37.8031 13.6795 38.5659 13.1171 39.1283C12.5547 39.6907 11.7919 40.0067 10.9965 40.0067C10.2011 40.0067 9.43831 39.6907 8.87588 39.1283C8.31346 38.5659 7.9975 37.8031 7.9975 37.0077C7.9975 36.2123 8.31346 35.4495 8.87588 34.8871C9.43831 34.3246 10.2011 34.0087 10.9965 34.0087C11.7919 34.0087 12.5547 34.3246 13.1171 34.8871C13.6795 35.4495 13.9955 36.2123 13.9955 37.0077Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M20.993 40.0067C21.7884 40.0067 22.5512 39.6907 23.1136 39.1283C23.6761 38.5659 23.992 37.8031 23.992 37.0077C23.992 36.2123 23.6761 35.4495 23.1136 34.8871C22.5512 34.3246 21.7884 34.0087 20.993 34.0087C20.1976 34.0087 19.4348 34.3246 18.8724 34.8871C18.31 35.4495 17.994 36.2123 17.994 37.0077C17.994 37.8031 18.31 38.5659 18.8724 39.1283C19.4348 39.6907 20.1976 40.0067 20.993 40.0067Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M41.9861 49.0038C41.9861 49.7991 41.6701 50.562 41.1077 51.1244C40.5453 51.6868 39.7825 52.0028 38.9871 52.0028C38.1917 52.0028 37.4289 51.6868 36.8665 51.1244C36.3041 50.562 35.9881 49.7991 35.9881 49.0038C35.9881 48.2084 36.3041 47.4456 36.8665 46.8831C37.4289 46.3207 38.1917 46.0048 38.9871 46.0048C39.7825 46.0048 40.5453 46.3207 41.1077 46.8831C41.6701 47.4456 41.9861 48.2084 41.9861 49.0038Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M38.9871 42.0059C39.3809 42.0059 39.7709 41.9284 40.1348 41.7776C40.4986 41.6269 40.8292 41.406 41.1077 41.1275C41.3862 40.8491 41.6071 40.5185 41.7578 40.1546C41.9085 39.7907 41.9861 39.4008 41.9861 39.0069C41.9861 38.6131 41.9085 38.2231 41.7578 37.8593C41.6071 37.4954 41.3862 37.1648 41.1077 36.8863C40.8292 36.6078 40.4986 36.3869 40.1348 36.2362C39.7709 36.0855 39.3809 36.0079 38.9871 36.0079C38.1917 36.0079 37.4289 36.3239 36.8665 36.8863C36.3041 37.4487 35.9881 38.2116 35.9881 39.0069C35.9881 39.8023 36.3041 40.5651 36.8665 41.1275C37.4289 41.69 38.1917 42.0059 38.9871 42.0059Z"
+                fill="#A08F36"
+              />
+              <path
+                d="M11.996 0C11.4657 0 10.9572 0.210643 10.5823 0.585591C10.2073 0.960539 9.99667 1.46908 9.99667 1.99933V8.00933H6.21793C5.68767 8.00933 5.17913 8.21997 4.80419 8.59492C4.42924 8.96987 4.2186 9.47841 4.2186 10.0087V16.9583C2.94293 17.6423 1.87679 18.6596 1.13385 19.9018C0.39091 21.144 -0.000966846 22.5646 1.79135e-06 24.012V57.9927C1.79135e-06 58.5229 0.210646 59.0315 0.585593 59.4064C0.960541 59.7814 1.46908 59.992 1.99934 59.992H29.8221C29.8779 59.9969 29.9339 59.9996 29.99 60H49.9833C50.5136 60 51.0221 59.7894 51.3971 59.4144C51.772 59.0395 51.9827 58.5309 51.9827 58.0007V42.006C51.9827 37.2337 50.0869 32.6568 46.7124 29.2823C43.3378 25.9078 38.761 24.012 33.9887 24.012H31.9893C31.9893 21.141 30.4778 18.6258 28.2106 17.2143V10.0087C28.2106 9.47841 28 8.96987 27.625 8.59492C27.2501 8.21997 26.7415 8.00933 26.2113 8.00933H21.9927V1.99933C21.9927 1.46908 21.782 0.960539 21.4071 0.585591C21.0321 0.210643 20.5236 0 19.9933 0H11.996ZM23.992 16.0147H8.21726V12.008H24.2119V16.0147H23.992ZM27.9907 55.9933H23.992V48.02C23.992 46.9595 23.5707 45.9424 22.8208 45.1925C22.0709 44.4426 21.0539 44.0213 19.9933 44.0213H11.996C10.9355 44.0213 9.91842 44.4426 9.16852 45.1925C8.41862 45.9424 7.99734 46.9595 7.99734 48.02V55.9933H3.99867V24.012C3.99867 22.9515 4.41996 21.9344 5.16985 21.1845C5.91975 20.4346 6.93682 20.0133 7.99734 20.0133H23.992C25.0525 20.0133 26.0696 20.4346 26.8195 21.1845C27.5694 21.9344 27.9907 22.9515 27.9907 24.012V55.9933ZM11.996 55.9933V48.02H19.9933V55.9933H11.996ZM47.984 56.0013H31.9893V28.0107H33.9887C37.7005 28.0107 41.2602 29.4852 43.8849 32.1098C46.5095 34.7344 47.984 38.2942 47.984 42.006V56.0013ZM17.994 8.00933H13.9953V3.99867H17.994V8.00933Z"
+                fill="#A08F36"
+              />
+            </svg>
+            <h3 class="font-semibold text-2xl leading-[27px] text-txtBeige-200 mt-4.5 lg:mt-5.5 lg:text-2xl">
+              Criminal Law
+            </h3>
+            <p class="mt-1 text-sm leading-5.25 text-txtBeige-200 lg:mt-4 lg:text-lg lg:leading-6">
+              Defend your justice from all criminal cases that happened to you
+              and find the truth
+            </p>
+            <p
+              class="mt-3 text-sm leading-6 underline underline-offset-4 text-backYellow-100 lg:mt-10 lg:text-lg"
+            >
+              <a href="#">More about this</a>
+            </p>
+            <a href="#">
+              <div
+                class="absolute grid w-11 h-11 border border-backYellow-100 rounded-full place-items-center bottom-8 lg:bottom-10.5 right-5.5"
+              >
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-backYellow-100"
+                    d="M2 2L12.7692 12L2 22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- BUSINEES LAW -->
+          <div class="relative px-6 pt-8 lg:pt-9.5 bg-backBrownLightest pb-11 lg:pb-13">
+            <svg class="w-12 h-12 lg:w-auto lg:h-auto" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.5 33.25V43.75C31.5 44.2141 31.6844 44.6592 32.0126 44.9874C32.3408 45.3156 32.7859 45.5 33.25 45.5H43.75C44.2141 45.5 44.6592 45.3156 44.9874 44.9874C45.3156 44.6592 45.5 44.2141 45.5 43.75V33.25C45.5 32.7859 45.3156 32.3408 44.9874 32.0126C44.6592 31.6844 44.2141 31.5 43.75 31.5H33.25C32.7859 31.5 32.3408 31.6844 32.0126 32.0126C31.6844 32.3408 31.5 32.7859 31.5 33.25ZM35 42V35H42V42H35Z" fill="#A08F36"/>
+              <path d="M10.5 0C10.2435 9.61803e-05 9.99015 0.0565781 9.7579 0.165447C9.52564 0.274316 9.32016 0.432909 9.156 0.63L0.406 11.13C0.143847 11.4444 0.000184182 11.8407 0 12.25V17.5C0 20.608 1.351 23.4045 3.5 25.326V54.25C3.5 54.7141 3.68437 55.1592 4.01256 55.4874C4.34075 55.8156 4.78587 56 5.25 56H50.75C51.2141 56 51.6592 55.8156 51.9874 55.4874C52.3156 55.1592 52.5 54.7141 52.5 54.25V25.326C54.649 23.401 56 20.608 56 17.5V12.25V12.187C56 11.872 56 11.62 55.594 11.13L46.844 0.63C46.6798 0.432909 46.4744 0.274316 46.2421 0.165447C46.0098 0.0565781 45.7565 9.61803e-05 45.5 0H10.5ZM10.5 24.5C8.64348 24.5 6.86301 23.7625 5.55025 22.4497C4.2375 21.137 3.5 19.3565 3.5 17.5V14H17.5V17.5C17.5 19.3565 16.7625 21.137 15.4497 22.4497C14.137 23.7625 12.3565 24.5 10.5 24.5ZM28 24.5C26.1435 24.5 24.363 23.7625 23.0503 22.4497C21.7375 21.137 21 19.3565 21 17.5V14H35V17.5C35 19.3565 34.2625 21.137 32.9497 22.4497C31.637 23.7625 29.8565 24.5 28 24.5ZM45.5 24.5C43.6435 24.5 41.863 23.7625 40.5503 22.4497C39.2375 21.137 38.5 19.3565 38.5 17.5V14H52.5V17.5C52.5 19.3565 51.7625 21.137 50.4497 22.4497C49.137 23.7625 47.3565 24.5 45.5 24.5ZM10.5 52.5H7V27.405C9.20605 28.1869 11.6102 28.2086 13.83 27.4666C16.0498 26.7245 17.9577 25.2614 19.25 23.31C20.2078 24.7535 21.5082 25.9373 23.035 26.7557C24.5619 27.5741 26.2677 28.0016 28 28C29.7327 28.0012 31.4386 27.5732 32.9655 26.7541C34.4924 25.9351 35.7926 24.7506 36.75 23.3065C38.0423 25.2579 39.9502 26.721 42.17 27.4631C44.3898 28.2051 46.794 28.1835 49 27.4015V52.5H28V33.25C28 32.7859 27.8156 32.3408 27.4874 32.0126C27.1593 31.6844 26.7141 31.5 26.25 31.5H12.25C11.7859 31.5 11.3408 31.6844 11.0126 32.0126C10.6844 32.3408 10.5 32.7859 10.5 33.25V52.5ZM17.99 10.5H5.488L11.319 3.5H20.321L17.99 10.5ZM34.321 10.5H21.679L24.01 3.5H31.99L34.321 10.5ZM38.01 10.5L35.679 3.5H44.681L50.5155 10.5H38.01ZM14 52.5V35H24.5V52.5H14Z" fill="#A08F36"/>
+              </svg>
+              
+            <h3 class="font-semibold text-2xl leading-[27px] text-txtBeige-200 mt-4.5 lg:mt-5.5 lg:text-2xl">
+              Businees Law
+            </h3>
+            <p class="mt-1 text-sm leading-5.25 text-txtBeige-200 lg:mt-4 lg:text-lg lg:leading-6">
+              Povide solutions to your businees problems that require protection under state law
+            </p>
+            <p
+              class="mt-3 text-sm leading-6 underline underline-offset-4 text-backYellow-100 lg:mt-10 lg:text-lg"
+            >
+              <a href="#">More about this</a>
+            </p>
+            <a href="#">
+              <div
+                class="absolute grid w-11 h-11 border border-backYellow-100 rounded-full place-items-center bottom-8 lg:bottom-10.5 right-5.5"
+              >
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-backYellow-100"
+                    d="M2 2L12.7692 12L2 22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- BANKING LAW -->
+          <div class="relative px-6 pt-8 lg:pt-9.5 bg-backBrownLightest pb-11 lg:pb-13">
+            <svg class="w-11 h-12 lg:w-auto lg:h-auto" width="52" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.064 14.6378C26.8859 14.6378 27.6741 14.3113 28.2553 13.7302C28.8364 13.149 29.1629 12.3608 29.1629 11.5389C29.1629 10.717 28.8364 9.92876 28.2553 9.3476C27.6741 8.76643 26.8859 8.43994 26.064 8.43994C25.2421 8.43994 24.4539 8.76643 23.8727 9.3476C23.2916 9.92876 22.9651 10.717 22.9651 11.5389C22.9651 12.3608 23.2916 13.149 23.8727 13.7302C24.4539 14.3113 25.2421 14.6378 26.064 14.6378Z" fill="#A08F36"/>
+              <path d="M48.3723 42.3922V22.5382H48.7181C52.0382 22.5382 53.4027 18.2737 50.6886 16.3515L28.9347 0.914438C28.0965 0.319562 27.0941 0 26.0663 0C25.0384 0 24.036 0.319562 23.1979 0.914438L1.44024 16.3515C-1.26273 18.2737 0.0906187 22.5382 3.41077 22.5382H3.75654V42.3922C1.52204 43.8273 0.0385667 46.3333 0.0385667 49.1849V54.141C0.0385667 54.634 0.234424 55.1069 0.583052 55.4555C0.93168 55.8041 1.40452 56 1.89756 56H50.2313C50.7243 56 51.1971 55.8041 51.5458 55.4555C51.8944 55.1069 52.0903 54.634 52.0903 54.141V49.1849C52.0903 46.3333 50.6105 43.8273 48.3723 42.3959V42.3922ZM25.3506 3.94831C25.5598 3.80009 25.8099 3.72048 26.0663 3.72048C26.3227 3.72048 26.5728 3.80009 26.782 3.94831L47.7477 18.8202H4.38488L25.3506 3.94831ZM44.6543 22.5382V41.1504C44.4489 41.1351 44.2431 41.1277 44.0371 41.1281H37.2183V22.5382H44.6543ZM7.47452 41.1504V22.5382H14.9105V41.1281H8.09542C7.88825 41.1276 7.68113 41.1351 7.47452 41.1504ZM8.09542 44.8461H44.0371C46.4315 44.8461 48.3723 46.7868 48.3723 49.1849V52.282H3.75654V49.1849C3.75654 46.7868 5.70105 44.8461 8.09542 44.8461ZM24.2054 41.1281H18.6285V22.5382H24.2054V41.1281ZM27.9234 41.1281V22.5382H33.5004V41.1281H27.9234Z" fill="#A08F36"/>
+              </svg>
+              
+            <h3 class="font-semibold text-2xl leading-[27px] text-txtBeige-200 mt-4.5 lg:mt-5.5 lg:text-2xl">
+              Banking Law
+            </h3>
+            <p class="mt-1 text-sm leading-5.25 text-txtBeige-200 lg:mt-4 lg:text-lg lg:leading-6">
+              We guarantee you to get legal protection for all banking processes just for your justice
+            </p>
+            <p
+              class="mt-3 text-sm leading-6 underline underline-offset-4 text-backYellow-100 lg:mt-10 lg:text-lg"
+            >
+              <a href="#">More about this</a>
+            </p>
+            <a href="#">
+              <div
+                class="absolute grid w-11 h-11 border border-backYellow-100 rounded-full place-items-center bottom-8 lg:bottom-10.5 right-5.5"
+              >
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-backYellow-100"
+                    d="M2 2L12.7692 12L2 22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- COMPANY LAW -->
+          <div class="relative px-6 pt-8 lg:pt-9.5 bg-backBrownLightest pb-11 lg:pb-13">
+            <svg class="w-11 h-12 lg:w-auto lg:h-auto" width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4443 11.4872C14.4443 12.2488 14.1399 12.9793 13.5982 13.5178C13.0564 14.0564 12.3216 14.3589 11.5554 14.3589C10.7892 14.3589 10.0544 14.0564 9.51265 13.5178C8.97088 12.9793 8.66652 12.2488 8.66652 11.4872C8.66652 10.7255 8.97088 9.99505 9.51265 9.45649C10.0544 8.91792 10.7892 8.61536 11.5554 8.61536C12.3216 8.61536 13.0564 8.91792 13.5982 9.45649C14.1399 9.99505 14.4443 10.7255 14.4443 11.4872Z" fill="#A08F36"/>
+              <path d="M11.5554 22.9743C12.3216 22.9743 13.0564 22.6717 13.5982 22.1332C14.1399 21.5946 14.4443 20.8642 14.4443 20.1025C14.4443 19.3409 14.1399 18.6104 13.5982 18.0718C13.0564 17.5333 12.3216 17.2307 11.5554 17.2307C10.7892 17.2307 10.0544 17.5333 9.51265 18.0718C8.97088 18.6104 8.66652 19.3409 8.66652 20.1025C8.66652 20.8642 8.97088 21.5946 9.51265 22.1332C10.0544 22.6717 10.7892 22.9743 11.5554 22.9743Z" fill="#A08F36"/>
+              <path d="M14.4443 28.718C14.4443 29.4796 14.1399 30.2101 13.5982 30.7487C13.0564 31.2872 12.3216 31.5898 11.5554 31.5898C10.7892 31.5898 10.0544 31.2872 9.51265 30.7487C8.97088 30.2101 8.66652 29.4796 8.66652 28.718C8.66652 27.9563 8.97088 27.2259 9.51265 26.6873C10.0544 26.1488 10.7892 25.8462 11.5554 25.8462C12.3216 25.8462 13.0564 26.1488 13.5982 26.6873C14.1399 27.2259 14.4443 27.9563 14.4443 28.718Z" fill="#A08F36"/>
+              <path d="M14.4443 37.3333C14.4443 38.095 14.1399 38.8254 13.5982 39.364C13.0564 39.9026 12.3216 40.2051 11.5554 40.2051C10.7892 40.2051 10.0544 39.9026 9.51265 39.364C8.97088 38.8254 8.66652 38.095 8.66652 37.3333C8.66652 36.5717 8.97088 35.8412 9.51265 35.3027C10.0544 34.7641 10.7892 34.4615 11.5554 34.4615C12.3216 34.4615 13.0564 34.7641 13.5982 35.3027C14.1399 35.8412 14.4443 36.5717 14.4443 37.3333Z" fill="#A08F36"/>
+              <path d="M11.5554 48.8205C12.3216 48.8205 13.0564 48.5179 13.5982 47.9794C14.1399 47.4408 14.4443 46.7103 14.4443 45.9487C14.4443 45.1871 14.1399 44.4566 13.5982 43.918C13.0564 43.3795 12.3216 43.0769 11.5554 43.0769C10.7892 43.0769 10.0544 43.3795 9.51265 43.918C8.97088 44.4566 8.66652 45.1871 8.66652 45.9487C8.66652 46.7103 8.97088 47.4408 9.51265 47.9794C10.0544 48.5179 10.7892 48.8205 11.5554 48.8205Z" fill="#A08F36"/>
+              <path d="M31.7776 40.2051C32.5438 40.2051 33.2786 39.9026 33.8204 39.364C34.3621 38.8254 34.6665 38.095 34.6665 37.3333C34.6665 36.5717 34.3621 35.8412 33.8204 35.3027C33.2786 34.7641 32.5438 34.4615 31.7776 34.4615C31.0114 34.4615 30.2766 34.7641 29.7349 35.3027C29.1931 35.8412 28.8887 36.5717 28.8887 37.3333C28.8887 38.095 29.1931 38.8254 29.7349 39.364C30.2766 39.9026 31.0114 40.2051 31.7776 40.2051Z" fill="#A08F36"/>
+              <path d="M40.4446 40.2051C41.2108 40.2051 41.9456 39.9026 42.4874 39.364C43.0291 38.8254 43.3335 38.095 43.3335 37.3333C43.3335 36.5717 43.0291 35.8412 42.4874 35.3027C41.9456 34.7641 41.2108 34.4615 40.4446 34.4615C39.6784 34.4615 38.9436 34.7641 38.4019 35.3027C37.8601 35.8412 37.5557 36.5717 37.5557 37.3333C37.5557 38.095 37.8601 38.8254 38.4019 39.364C38.9436 39.9026 39.6784 40.2051 40.4446 40.2051Z" fill="#A08F36"/>
+              <path d="M40.4446 31.5898C41.2108 31.5898 41.9456 31.2872 42.4874 30.7487C43.0291 30.2101 43.3335 29.4796 43.3335 28.718C43.3335 27.9563 43.0291 27.2259 42.4874 26.6873C41.9456 26.1488 41.2108 25.8462 40.4446 25.8462C39.6784 25.8462 38.9436 26.1488 38.4019 26.6873C37.8601 27.2259 37.5557 27.9563 37.5557 28.718C37.5557 29.4796 37.8601 30.2101 38.4019 30.7487C38.9436 31.2872 39.6784 31.5898 40.4446 31.5898Z" fill="#A08F36"/>
+              <path d="M34.6665 28.718C34.6665 29.4796 34.3621 30.2101 33.8204 30.7487C33.2786 31.2872 32.5438 31.5898 31.7776 31.5898C31.0114 31.5898 30.2766 31.2872 29.7349 30.7487C29.1931 30.2101 28.8887 29.4796 28.8887 28.718C28.8887 27.9563 29.1931 27.2259 29.7349 26.6873C30.2766 26.1488 31.0114 25.8462 31.7776 25.8462C32.5438 25.8462 33.2786 26.1488 33.8204 26.6873C34.3621 27.2259 34.6665 27.9563 34.6665 28.718Z" fill="#A08F36"/>
+              <path d="M40.4446 22.9743C41.2108 22.9743 41.9456 22.6717 42.4874 22.1332C43.0291 21.5946 43.3335 20.8642 43.3335 20.1025C43.3335 19.3409 43.0291 18.6104 42.4874 18.0718C41.9456 17.5333 41.2108 17.2307 40.4446 17.2307C39.6784 17.2307 38.9436 17.5333 38.4019 18.0718C37.8601 18.6104 37.5557 19.3409 37.5557 20.1025C37.5557 20.8642 37.8601 21.5946 38.4019 22.1332C38.9436 22.6717 39.6784 22.9743 40.4446 22.9743Z" fill="#A08F36"/>
+              <path d="M34.6665 20.1025C34.6665 20.8642 34.3621 21.5946 33.8204 22.1332C33.2786 22.6717 32.5438 22.9743 31.7776 22.9743C31.0114 22.9743 30.2766 22.6717 29.7349 22.1332C29.1931 21.5946 28.8887 20.8642 28.8887 20.1025C28.8887 19.3409 29.1931 18.6104 29.7349 18.0718C30.2766 17.5333 31.0114 17.2307 31.7776 17.2307C32.5438 17.2307 33.2786 17.5333 33.8204 18.0718C34.3621 18.6104 34.6665 19.3409 34.6665 20.1025Z" fill="#A08F36"/>
+              <path d="M31.7778 8.61539V6.46154C31.7778 4.74783 31.093 3.10431 29.874 1.89254C28.655 0.680767 27.0017 0 25.2778 0H6.5C4.77609 0 3.12279 0.680767 1.90381 1.89254C0.684819 3.10431 0 4.74783 0 6.46154V53.8462C0 55.0351 0.970667 56 2.16667 56H49.8333C50.408 56 50.9591 55.7731 51.3654 55.3692C51.7717 54.9652 52 54.4174 52 53.8462V15.0769C52 13.3632 51.3152 11.7197 50.0962 10.5079C48.8772 9.29615 47.2239 8.61539 45.5 8.61539H31.7778ZM4.33333 6.46154C4.33333 5.8903 4.56161 5.34246 4.96794 4.93854C5.37426 4.53461 5.92536 4.30769 6.5 4.30769H25.2778C25.8524 4.30769 26.4035 4.53461 26.8098 4.93854C27.2162 5.34246 27.4444 5.8903 27.4444 6.46154V8.61539H26.7222C24.9983 8.61539 23.345 9.29615 22.126 10.5079C20.907 11.7197 20.2222 13.3632 20.2222 15.0769V51.6923H4.33333V6.46154ZM33.2222 51.6923V47.3846H39V51.6923H33.2222ZM43.3333 45.2308C43.3333 44.6595 43.1051 44.1117 42.6987 43.7078C42.2924 43.3038 41.7413 43.0769 41.1667 43.0769H31.0556C30.4809 43.0769 29.9298 43.3038 29.5235 43.7078C29.1172 44.1117 28.8889 44.6595 28.8889 45.2308V51.6923H24.5556V15.0769C24.5556 14.5057 24.7838 13.9578 25.1902 13.5539C25.5965 13.15 26.1476 12.9231 26.7222 12.9231H45.5C46.0746 12.9231 46.6257 13.15 47.0321 13.5539C47.4384 13.9578 47.6667 14.5057 47.6667 15.0769V51.6923H43.3333V45.2308Z" fill="#A08F36"/>
+              </svg>
+              
+            <h3 class="font-semibold text-2xl leading-[27px] text-txtBeige-200 mt-4.5 lg:mt-5.5 lg:text-2xl">
+              Company Law
+            </h3>
+            <p class="mt-1 text-sm leading-5.25 text-txtBeige-200 lg:mt-4 lg:text-lg lg:leading-6">
+              Layered protection for various matters concerning ecosystems in the economic order 
+            </p>
+            <p
+              class="mt-3 text-sm leading-6 underline underline-offset-4 text-backYellow-100 lg:mt-10 lg:text-lg"
+            >
+              <a href="#">More about this</a>
+            </p>
+            <a href="#">
+              <div
+                class="absolute grid w-11 h-11 border border-backYellow-100 rounded-full place-items-center bottom-8 lg:bottom-10.5 right-5.5"
+              >
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-backYellow-100"
+                    d="M2 2L12.7692 12L2 22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="pb-24 pt-25 lg:pt-38 lg:pb-[5.56rem]">
+        <div
+          class="container flex-col-reverse sm:flex sm:flex-row-reverse container2 sm:items-center lg:gap-80 sm:gap-25 md:gap-40"
+        >
+          <h2
+            class="text-4xl font-extrabold leading-normal text-txtBeige-300 sm:hidden"
+          >
+            We help legality in your business
+          </h2>
+          <div class="relative flex justify-end w-full mt-12 lg:mt-0 lg:w-auto">
+            <div
+              class="overflow-hidden text-right max-w-13r h-75 lg:h-[35rem] lg:max-w-none lg:w-100"
+            >
+              <img
+                class="object-cover object-center h-full w-full"
+                src="img/hammer3.jpg"
+                alt="hammer-img"
+              />
+            </div>
+            <div
+              class="max-w-13.5r lg:max-w-none lg:w-100 max-h-52 lg:max-h-full absolute bottom-0 lg:bottom-auto translate-y-1/2 left-0 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:top-1/2"
+            >
+              <img src="img/judge2.png" alt="lawyer-img" />
+              <div class="px-4 py-3 lg:p-6 lg:pb-8 bg-backYellow-100">
+                <p
+                  class="font-semibold leading-4 text-white text-xs2 lg:text-xl lg:leading-8"
+                >
+                  Our discussion in solving problems to business legality
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-col justify-between mt-42 sm:mt-0 sm:flex lg:h-90">
+            <div>
+              <h2
+                class="hidden text-4xl xl:text-5xl xl:leading-16.25 font-extrabold leading-none text-txtBeige-300 sm:block"
+              >
+                We help legality in your business
+              </h2>
+              <p
+                class="text-sm leading-5 xl:text-xl text-txtBeige-200 sm:mt-6 xl:leading-8"
+              >
+                In developing and running your business, you are required to pay
+                more attention to the legality of your business because it may
+                violate local laws
+              </p>
+            </div>
+            <p
+              class="text-sm lg:text-xl leading-6 underline underline-offset-4 text-backYellow-100 mt-5.5 lg:mt-[4.5rem]"
+            >
+              <a href="#">See more about this</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-19.5 relative xl:mt-54">
+        <div class="container xl:absolute container2 xl:-top-[9.562rem] xl:left-[41.25%] xl:w-[30.125rem]">
+          <h2 class="text-4xl lg:text-5xl lg:leading-16.25 font-extrabold leading-normal text-txtBeige-300">
+            Our <br class="lg:hidden"/>
+            Professional <br />
+            Lawyer For Your
+          </h2>
+          <p class="mt-6 text-sm leading-7 text-txtBeige-200 lg:text-xl lg:leading-8">
+            We present professional lawyers whose quality is unquestionable
+            because of their experience who has handled many cases
+          </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div
+          class="container relative mt-8 swiper2-box sm:mt-11 lg:mt-20 container2"
+        >
+          <div class="flex justify-end w-full ">
+            <!-- SLIDER BUTTONS -->
+            <div class="flex gap-2 lg:gap-6 sm:translate-x-14 lg:translate-x-0">
+              <button
+                class="grid rounded-full bg-backBrownLightest w-15 h-15 place-items-center btn-left"
+              >
+                <svg
+                  width="15"
+                  height="25"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="-translate-x-1/4"
+                >
+                  <path
+                    d="M13 22L2.23077 12L13 2"
+                    stroke="#A08F36"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </button>
+              <button
+                class="grid rounded-full w-15 h-15 bg-backYellow-100 place-items-center btn-right"
+              >
+                <svg
+                  width="15"
+                  height="25"
+                  viewBox="0 0 15 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M2 2L12.7692 12L2 22"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-8 overflow-visible swiper2 h-107.5">
+            <!-- Additional required wrapper -->
+            <div class="flex items-center swiper-wrapper sm:items-end">
+              <!-- Slides -->
+              <div class="relative object-cover h-full swiper-slide">
+                <img
+                  src="img/person1.jpg"
+                  alt="hammer-img"
+                  class="object-cover object-top w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full swiper-slide">
+                <img
+                  src="img/person2.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person3.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11" >
+
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person4.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person1.jpg"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person2.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person3.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11" >
+
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div>
+                    </a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person4.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person1.jpg"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="relative object-cover h-full sm:h-auto swiper-slide">
+                <img
+                  src="img/person2.png"
+                  alt="hammer-img"
+                  class="object-cover w-full h-full"
+                />
+                <div
+                  class="absolute flex flex-col w-3/4 gap-1 -translate-x-1/2 bottom-6 left-1/2 swiper-slide-content"
+                >
+                  <h2
+                    class="text-2xl font-bold leading-8 text-center text-white lg:text-2xl lg:leading-8 "
+                  >
+                    Christoper Reid
+                  </h2>
+                  <p
+                    class="text-sm font-medium leading-8 text-center text-white capitalize lg:text-xl lg:text-beige-50 lg:mt-4"
+                  >
+                    An experienced lawyer who has handled many legal cases
+                  </p>
+                  <p
+                    class="text-sm leading-6 text-center text-white underline underline-offset-4 lg:mt-5 lg:text-lg lg:text-txtBeige-25"
+                  >
+                    <a href="#">More Profile</a>
+                  </p>
+                  <a href="#">
+                    <div
+                      class="grid w-10 h-10 mx-auto mt-3 border border-white rounded-full place-items-center lg:mt-11"
+                    >
+                      <svg
+                        width="8"
+                        height="15"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="stroke-white"
+                          d="M2 2L12.7692 12L2 22"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute swiper-pagination xl:!bottom-auto xl:!-top-16 xl:!left-[6.94rem] !-bottom-13 !flex !justify-between !container !left-1/2 -translate-x-1/2 !max-w-pagination"></div>
+          </div>
+          <div
+            class="absolute bottom-0 z-40 flex -translate-x-1/2 translate-y-1/2 left-1/2 sm:translate-y-full sm:right-0 sm:left-auto sm:translate-x-0"
+          ></div>
+        </div>
+      </section>
+      <section class="pt-19.5">
+        <div class="container container2">
+          <div class="container flex flex-col container2 lg:flex-col-reverse">
+            <div class="flex flex-col lg:flex-row lg:gap-44 lg:items-center lg:mt-10">
+              <h2 class="text-4xl font-extrabold leading-2.75 lg:leading-16.25 text-txtBeige-200  whitespace-nowrap lg:text-5xl capitalize">
+                What they <br class="lg:hidden"> think <br class="hidden lg:block"> about us
+              </h2>
+              <p class="mt-6 text-sm leading-5 lg:mt-0 text-txtBeige-200 lg:text-xl lg:leading-8 lg:pr-13">
+                Here are some responses from clients who have <br class="hidden lg:block"> worked with us, and managed to overcome their <br class="hidden lg:block"> legal problems
+              </p>
+            </div>
+            <p
+              class="mt-5 text-sm leading-none underline lg:mt-0 underline-offset-4 text-backYellow-100 lg:text-xl"
+            >
+              <a href="#">See more our services</a>
+            </p>
+          </div>
+        </div>
+        <div class="container "> 
+          
+          <div class="flex flex-col w-full gap-5 mt-15">
+
+
+            <!-- Slider main container -->
+            <div class="hidden swiper3 lg:block">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide lg:max-w-125"><div class="relative pb-10 bg-backBrownLight p-7 lg:pt-11">
+              <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                </svg>
+            
+              <img src="img/user1.png" alt="user-img">
+              <p class="text-sm leading-5 text-txtBeige-200 mt-4.5 lg:text-xl lg:leading-8">Legal issues that were taken care of were quickly resolved and very easy for me and others to understand</p>
+              <div class="mt-4.5 lg:mt-8">
+                <h2 class="text-xl font-bold text-white">Riku Sandes</h2>
+                <p class="mt-2 text-sm text-txtBeige-50">CEO at Royal Company</p>
+              </div>
+            </div></div>
+                <div class="swiper-slide lg:max-w-125"><div class="relative pb-10 bg-backBrownLight p-7 lg:pt-11">
+              <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                </svg>
+            
+              <img src="img/user2.png" alt="user-img">
+              <p class="text-sm leading-5 text-txtBeige-200 mt-4.5  lg:text-xl lg:leading-8">Clear work process and very smooth communication during the cooperation period, it's amazing</p>
+              <div class="mt-4.5 lg:mt-8">
+                <h2 class="text-xl font-bold text-white">Roland Graha</h2>
+                <p class="mt-2 text-sm text-txtBeige-50">Health Doctor at Hospital</p>
+              </div>
+            </div></div>
+                <div class="swiper-slide lg:max-w-125"><div class="relative pb-10 bg-backBrownLight p-7 lg:pt-11">
+              <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                </svg>
+            
+              <img src="img/user3.png" alt="user-img">
+              <p class="text-sm leading-5 text-txtBeige-200 mt-4.5  lg:text-xl lg:leading-8">All the legalities of the company's business are well managed so that the business can run safely</p>
+              <div class="mt-4.5 lg:mt-8">
+                <h2 class="text-xl font-bold text-white">Aurelia Hazard</h2>
+                <p class="mt-2 text-sm text-txtBeige-50">Manager at Clirilo Inc</p>
+              </div>
+            </div></div>
+              
+              </div>
+            </div>        
+            <div class="flex flex-col gap-5 lg:hidden">
+              <div class="relative pb-10 bg-backBrownLight p-7">
+                <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                  </svg>
+              
+                <img src="img/user1.png" alt="user-img">
+                <p class="text-sm leading-5 text-txtBeige-200 mt-4.5">Legal issues that were taken care of were quickly resolved and very easy for me and others to understand</p>
+                <div class="mt-4.5">
+                  <h2 class="text-xl font-bold text-white">Riku Sandes</h2>
+                  <p class="mt-2 text-sm text-txtBeige-50">CEO at Royal Company</p>
+                </div>
+              </div>
+              <div class="relative pb-10 bg-backBrownLight p-7">
+                <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                  </svg>
+              
+                <img src="img/user2.png" alt="user-img">
+                <p class="text-sm leading-5 text-txtBeige-200 mt-4.5">Clear work process and very smooth communication during the cooperation period, it's amazing</p>
+                <div class="mt-4.5">
+                  <h2 class="text-xl font-bold text-white">Roland Graha</h2>
+                  <p class="mt-2 text-sm text-txtBeige-50">Health Doctor at Hospital</p>
+                </div>
+              </div>
+              <div class="relative pb-10 bg-backBrownLight p-7">
+                <svg class="absolute right-7 bottom-8" width="34" height="25" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.4432 9.73827C27.4432 12.3371 28.1416 14.5477 29.5385 16.3698C31.663 19.1181 35.7664 19.4467 38.1527 18.909C39.1422 24.6743 34.3695 32.0228 28.1999 35.1892L32.9435 42C42.2561 37.4595 51.3942 27.0043 49.8226 13.8307C48.8332 5.49644 44.1478 0 37.5125 0C34.6023 0 32.1868 0.866283 30.2952 2.62873C28.3745 4.39118 27.4432 6.75107 27.4432 9.73827ZM0 9.73827C0 12.3371 0.698444 14.5477 2.09534 16.3698C4.21979 19.1181 8.32318 19.4467 10.7095 18.909C11.699 24.6743 6.92628 32.0228 0.756653 35.1892L5.50028 42C14.8129 37.4595 23.951 27.0043 22.3794 13.8307C21.39 5.49644 16.7046 0 10.0693 0C7.15909 0 4.74363 0.866283 2.85199 2.62873C0.931259 4.39118 0 6.75107 0 9.73827Z" fill="#A08F36"/>
+                  </svg>
+              
+                <img src="img/user3.png" alt="user-img">
+                <p class="text-sm leading-5 text-txtBeige-200 mt-4.5">All the legalities of the company's business are well managed so that the business can run safely</p>
+                <div class="mt-4.5">
+                  <h2 class="text-xl font-bold text-white">Aurelia Hazard</h2>
+                  <p class="mt-2 text-sm text-txtBeige-50">Manager at Clirilo Inc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-13" id="footer">
+      <div class="container grid justify-between grid-cols-2 pb-16 lg:pb-12 container2 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+        <div>
+          <h3 class="text-2xl font-bold text-backYellow-100">Services</h3>
+          <ul class="flex flex-col gap-7 lg:gap-8 mt-9">
+            <a href="#choose-law">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Criminal Lawyer</li>
+            </a>
+            <a href="#choose-law">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Businees Legal</li>
+            </a>
+            <a href="#choose-law">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Banking</li>
+            </a>
+            <a href="#choose-law">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Company Grow</li>
+            </a>
+            <a href="#choose-law">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Healthy Law</li>
+            </a>
+        </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-backYellow-100">Information</h3>
+          <ul class="flex flex-col gap-7 lg:gap-8 mt-9">
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Update News</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Sign Up</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Premium Feature</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Terms & Conditions</li>
+            </a>
+            
+        </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-backYellow-100">Company</h3>
+          <ul class="flex flex-col gap-7 lg:gap-8 mt-9">
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Patnership</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Latest Project</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">About</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Sitemap</li>
+            </a>
+            <a href="#footer">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">Contact</li>
+            </a>
+        </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-backYellow-100">About Us</h3>
+          <ul class="flex flex-col gap-7 lg:gap-8 mt-9">
+            
+              <li class="text-sm text-txtBeige-50">Services that provide <br class="hidden lg:block"> professional lawyers, we <br class="hidden lg:block"> have been in the field for <br class="hidden lg:block">  more than 10 years</li>
+            
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">(021) 234 765 987</li>
+            </a>
+            <a href="#">
+              <li class="text-sm text-txtBeige-50 hover:text-white transition-all duration-300">lawana@company.com</li>
+            </a>
+        </ul>
+        </div>
+      </div>
+      <div class=" bg-backBrownLight py-7">
+        <div class="container flex justify-between container2">
+          <div class="flex items-center gap-2">
+            <div
+              class="relative flex items-center justify-center w-4.5 h-4.5 lg:w-8 lg:h-8 pt-1 pr-1 overflow-hidden rounded-full bg-backYellow-100"
+            >
+              <svg
+              class="h-3 w-3 lg:h-auto lg:w-auto"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-backBrown"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.753 9.4005L11.586 2.232L12.441 1.3785L11.0655 0L4.695 6.3675L6.075 7.7445L6.87 6.9495L9.8025 9.8805L0 19.683L1.245 20.9265L11.0445 11.1255L14.0355 14.115L13.242 14.9115L14.619 16.287L21 9.9075L19.6245 8.5305L18.753 9.4005Z"
+                  fill="#A08F36"
+                />
+              </svg>
+            </div>
+            <p
+              class="flex items-center text-sm lg:text-2xl leading-7 font-semibold text-backYellow-200"
+            >
+              <a href="#">Lawana</a>
+            </p>
+          </div>
+          <p class="flex items-center text-xs text-backYellow-200 lg:text-xl lg:leading-6">© Lawana 2021 all rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
