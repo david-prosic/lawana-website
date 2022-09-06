@@ -91,5 +91,5 @@ navLinks.forEach((el)=>{
 
 //Refresh on window resize
 window.addEventListener("resize", ()=>{
-  location.reload();
+    location.reload();
 })
